@@ -3,3 +3,4 @@ black
 isort
 Django
 djangorestframework
+djangorestframework-simplejwt
