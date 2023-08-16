@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "apis",
+    "accounts",
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,5 @@ SIMPLE_JWT = {
     "AUTH_HEADER_TYPES": ("Bearer",),
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
 }
+
+AUTH_USER_MODEL = "accounts.CustomUser"
