@@ -1,5 +1,5 @@
 from accounts.views import AccountCreateAPIView, AccountRetrieveAPIView
-from bodydata.views import BodyDataCreateAPIView
+from bodydata.views import BodyDataCreateAPIView, WeightCalculationAPIView
 from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
@@ -9,4 +9,9 @@ urlpatterns = [
     path("account/create/", AccountCreateAPIView.as_view(), name="account_create"),
     path("account/<pk>/", AccountRetrieveAPIView.as_view(), name="account_retrieve"),
     path("bodydata/create/", BodyDataCreateAPIView.as_view(), name="bodydata_create"),
+    path(
+        "bodydata/weight-calculation/",
+        WeightCalculationAPIView.as_view(),
+        name="weight_calculation",
+    ),
 ]
