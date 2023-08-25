@@ -1,0 +1,49 @@
+ideal-body-weight-api/
+├── .flake8
+├── .gitignore
+├── .vscode/
+│   └── settings.json
+├── README.md
+├── project/
+│   ├── accounts/
+│   │   ├── __init__.py
+│   │   ├── __pycache__/
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── tests.py
+│   │   └── views.py
+│   ├── apis/
+│   │   ├── __init__.py
+│   │   ├── __pycache__/
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   ├── models.py
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   ├── bodydata/
+│   │   ├── __init__.py
+│   │   ├── __pycache__/
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── tests.py
+│   │   └── views.py
+│   ├── config/
+│   │   ├── __init__.py
+│   │   ├── __pycache__/
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── db.sqlite3
+│   └── manage.py*
+├── project_dir.txt
+├── requirements.txt
+└── venv/
