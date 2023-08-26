@@ -44,13 +44,14 @@ class AccountRequestSerializer(serializers.ModelSerializer):
 class AccountResponseSerializer(serializers.ModelSerializer):
     """アカウントレスポンス用のシリアライザ"""
 
-    bodydata_set = BodyDataSerializer(many=True)
+    bodydata_set = BodyDataSerializer(many=True, read_only=True)
 
     class Meta:
         model = CustomUser
         fields = [
             "first_name",
             "last_name",
+            "email",
             "gender",
             "bodydata_set",
         ]
