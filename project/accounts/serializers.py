@@ -11,7 +11,6 @@ class AccountSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CustomUser
-        # TODO: email, passwordはレスポンスから外す
         fields = [
             "username",
             "first_name",
@@ -20,6 +19,21 @@ class AccountSerializer(serializers.ModelSerializer):
             "gender",
             "password",
             "bodydata_set",
+        ]
+
+
+class AccountRequestSerializer(serializers.ModelSerializer):
+    """アカウントリクエスト用のシリアライザ"""
+
+    class Meta:
+        model = CustomUser
+        fields = [
+            "username",
+            "first_name",
+            "last_name",
+            "email",
+            "gender",
+            "password",
         ]
 
     def create(self, validated_data):
@@ -34,6 +48,7 @@ class AccountResponseSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
         fields = [
+            "username",
             "first_name",
             "last_name",
             "email",
