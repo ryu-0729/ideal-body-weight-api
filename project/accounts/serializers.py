@@ -24,3 +24,19 @@ class AccountSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         return CustomUser.objects.create_user(**validated_data)
+
+
+class AccountResponseSerializer(serializers.ModelSerializer):
+    """アカウントレスポンス用のシリアライザ"""
+
+    bodydata_set = BodyDataSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = CustomUser
+        fields = [
+            "first_name",
+            "last_name",
+            "email",
+            "gender",
+            "bodydata_set",
+        ]
