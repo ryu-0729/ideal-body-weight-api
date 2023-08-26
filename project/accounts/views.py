@@ -2,7 +2,7 @@ from rest_framework import generics, permissions, status, views
 from rest_framework.response import Response
 
 from .models import CustomUser
-from .serializers import AccountSerializer
+from .serializers import AccountResponseSerializer, AccountSerializer
 
 
 class AccountCreateAPIView(generics.CreateAPIView):
@@ -19,5 +19,5 @@ class AccountMypageAPIView(views.APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request, *args, **kwargs):
-        serializer = AccountSerializer(request.user)
+        serializer = AccountResponseSerializer(request.user)
         return Response(serializer.data, status.HTTP_200_OK)
