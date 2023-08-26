@@ -7,7 +7,6 @@ ideal-body-weight-api/
 ├── project/
 │   ├── accounts/
 │   │   ├── __init__.py
-│   │   ├── __pycache__/
 │   │   ├── admin.py
 │   │   ├── apps.py
 │   │   ├── migrations/
@@ -17,17 +16,12 @@ ideal-body-weight-api/
 │   │   └── views.py
 │   ├── apis/
 │   │   ├── __init__.py
-│   │   ├── __pycache__/
-│   │   ├── admin.py
 │   │   ├── apps.py
 │   │   ├── migrations/
-│   │   ├── models.py
 │   │   ├── tests.py
-│   │   ├── urls.py
-│   │   └── views.py
+│   │   └── urls.py
 │   ├── bodydata/
 │   │   ├── __init__.py
-│   │   ├── __pycache__/
 │   │   ├── admin.py
 │   │   ├── apps.py
 │   │   ├── migrations/
@@ -37,13 +31,11 @@ ideal-body-weight-api/
 │   │   └── views.py
 │   ├── config/
 │   │   ├── __init__.py
-│   │   ├── __pycache__/
 │   │   ├── asgi.py
 │   │   ├── settings.py
 │   │   ├── urls.py
 │   │   └── wsgi.py
 │   ├── db.sqlite3
 │   └── manage.py*
-├── project_dir.txt
 ├── requirements.txt
 └── venv/
