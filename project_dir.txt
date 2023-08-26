@@ -4,8 +4,8 @@ ideal-body-weight-api/
 ├── .vscode/
 │   └── settings.json
 ├── README.md
-├── project/
-│   ├── accounts/
+├── project/                  （← ベースディレクトリ）
+│   ├── accounts/             （← アカウント用のアプリケーション）
 │   │   ├── __init__.py
 │   │   ├── admin.py
 │   │   ├── apps.py
@@ -14,13 +14,13 @@ ideal-body-weight-api/
 │   │   ├── serializers.py
 │   │   ├── tests.py
 │   │   └── views.py
-│   ├── apis/
+│   ├── apis/                 （← API用のアプリケーション）
 │   │   ├── __init__.py
 │   │   ├── apps.py
 │   │   ├── migrations/
 │   │   ├── tests.py
 │   │   └── urls.py
-│   ├── bodydata/
+│   ├── bodydata/             （← 身体データ用のアプリケーション）
 │   │   ├── __init__.py
 │   │   ├── admin.py
 │   │   ├── apps.py
@@ -29,7 +29,7 @@ ideal-body-weight-api/
 │   │   ├── serializers.py
 │   │   ├── tests.py
 │   │   └── views.py
-│   ├── config/
+│   ├── config/               （← 設定ディレクトリ）
 │   │   ├── __init__.py
 │   │   ├── asgi.py
 │   │   ├── settings.py
