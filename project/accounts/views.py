@@ -20,7 +20,7 @@ class AccountCreateAPIView(generics.CreateAPIView):
 
 class AccountRetrieveAPIView(generics.RetrieveAPIView):
     queryset = CustomUser.objects.all().prefetch_related("bodydata_set")
-    serializer_class = AccountSerializer
+    serializer_class = AccountResponseSerializer
     permission_classes = [permissions.IsAuthenticated]
 
 
