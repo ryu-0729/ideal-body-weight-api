@@ -9,3 +9,4 @@ Python3.9
 Django4.2.4  
 djangorestframework3.14.0  
 djangorestframework-simplejwt5.2.2  
+drf-rw-serializers==1.0.5  
